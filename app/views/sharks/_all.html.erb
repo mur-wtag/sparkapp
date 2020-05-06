@@ -2,7 +2,7 @@
   <ul>
     <li class="post">
       <%= post.body %>
-      <%= button_tag "Remove Post", data: { controller: "posts", action: "posts#remove" } %>
+      <%= link_to "Remove Post", shark_post_path(post.shark, post), method: :delete, data: { controller: "posts", action: "posts#remove" } if post.id %>
       <%= button_tag "Upvote Post", data: { controller: "posts", action: "posts#upvote" } %>
     </li>
   </ul>

@@ -15,7 +15,7 @@ export default class extends Controller {
 
   upvote() {
     let post = event.target.closest(".post");
-    post.insertAdjacentHTML('beforeend', '<i class="fa fa-check-circle"></i>');
+    post.insertAdjacentHTML('beforeend', '<i class="fa fa-check-circle">l</i>');
   }
 
   remove() {
